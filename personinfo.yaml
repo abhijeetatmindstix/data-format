@@ -1,0 +1,37 @@
+people:
+ - firstName: Abhijeet
+   lastName: Dhawale
+   age: 25
+   current address:
+     street: 5884+C6J, Guru Gobind Singh Ji Rd
+     city: Nanded
+     state: Maharashtra
+     zipCode: 431601
+   permanent address:
+     street: 143 Ambajogai Raod Ahmedpur
+     city: Latur
+     state: Maharashtra
+     zipCode: 431645
+   contactDetails:
+     - type: home
+       number: 8856074178
+     - type: work
+       number: 8856074178
+ - firstName: Prathmesh
+   lastName: Dharmadhikari
+   age: 22
+   current address:
+     street: 5884+C6J, Guru Gobind Singh Ji Rd
+     city: Nanded
+     state: Maharashtra
+     zipCode: 431601
+   permanent address:
+     street: 143 Ambajogai Raod Ahmedpur
+     city: Latur
+     state: Maharashtra
+     zipCode: 431645
+   contactDetails:
+     - type: home
+       number: 8856074178
+     - type: work
+       number: 8856074178
