@@ -1,0 +1,142 @@
+#Problem statement:
+
+#Create a JSON object that represents a person's information like firstName, LastName, age, address, phone number. Kind of Data base for multiple person's information.
+
+#Where address can be multi line details for eg. street, city, state, zipCode etc and can have multiple contact details like home phone number and work mobile number etc
+
+########################################################################
+
+{
+   "people": [
+     {
+       "firstName": "Abhijeet",
+       "lastName": "Dhawale",
+       "age": 25,
+       "address":
+       {
+         "street": "5884+C6J, Guru Gobind Singh Ji Rd",
+         "city": "Nanded",
+         "state": "Maharashtra",
+         "zipCode": "431601"
+       },
+       "contactDetails":
+       {
+         "homePhoneNumber": "8856074178",
+         "workMobileNumber": "8856074178"
+       }
+     },
+     {
+       "firstName": "Prathmesh",
+       "lastName": "Dharmadhikari",
+       "age": 22,
+       "address": {
+         "street": "5884+C6J, Golai Rd",
+         "city": "Latur",
+         "state": "Maharashtra",
+         "zipCode": "12345"
+       },
+       "contactDetails": {
+         "homePhoneNumber": "7876453456",
+         "workMobileNumber": "876453456"
+       }
+     }
+   ]
+ }
+
+
+
+############################################################################################
+
+#What I understood From the above task:
+
+#The JSON object contains an array of people, which is represented as square brackets [ ]. Each person is an object, represented by curly braces {}.
+
+#Each person object has keys for their information such as firstName, lastName, age, address, and contactDetails.
+#The value for each key is given as a string (e.g. "Abhijeet"), number (e.g. 25), 
+#The key-value pairs are separated by a colon (:) and each key-value pair is separated by a comma (,).
+
+############################################################################################
+
+
+
+
+
+
+# Q. Can you alter the json object to include two addresses such as your home/current address and a permanent address? Additionally, instead of using a single "contact" object in an array, consider creating multiple objects for each type
+
+
+
+{
+   "people": [
+     {
+       "firstName": "Abhijeet",
+       "lastName": "Dhawale",
+       "age": 25,
+       "current address":
+       {
+         "street": "5884+C6J, Guru Gobind Singh Ji Rd",
+         "city": "Nanded",
+         "state": "Maharashtra",
+         "zipCode": "431601"
+       },
+       "permanent address":
+       {
+         "street": "143 Ambajogai Raod Ahmedpur",
+         "city": "Latur",
+         "state": "Maharashtra",
+         "zipCode": "431645"
+       },       
+       "contactDetails": [
+           {
+             "type": "home",
+             "number": "8856074178"
+           },
+           {
+             "type": "work",
+             "number": "8856074178"
+           }
+         ]
+     },
+     {
+       "firstName": "Prathmesh",
+       "lastName": "Dharmadhikari",
+       "age": 22,
+       "current address":
+       {
+         "street": "5884+C6J, Guru Gobind Singh Ji Rd",
+         "city": "Nanded",
+         "state": "Maharashtra",
+         "zipCode": "431601"
+       },
+       "permanent address":
+       {
+         "street": "143 Ambajogai Raod Ahmedpur",
+         "city": "Latur",
+         "state": "Maharashtra",
+         "zipCode": "431645"
+       },
+       "contactDetails": [
+           {
+             "type": "home",
+             "number": "8856074178"
+           },
+           {
+             "type": "work",
+             "number": "8856074178"
+           }
+         ]
+     }
+   ]
+ }
+
+#################################################################################################
+#What I understood From the above task:
+
+Additionally, the contactDetails key now contains an array of objects, each of which represents a different type of contact (e.g. home, work). Each contact object has keys for type and number.
+    
+
+
+
+
+
+
