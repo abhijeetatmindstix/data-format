@@ -1,11 +1,11 @@
-#Problem statement:
+/*Problem statement:
 
 #Create a JSON object that represents a person's information like firstName, LastName, age, address, phone number. Kind of Data base for multiple person's information.
 
 #Where address can be multi line details for eg. street, city, state, zipCode etc and can have multiple contact details like home phone number and work mobile number etc
 
 ########################################################################
-
+*/
 {
    "people": [
      {
@@ -44,7 +44,7 @@
  }
 
 
-
+/*
 ############################################################################################
 
 #What I understood From the above task:
@@ -56,13 +56,13 @@
 #The key-value pairs are separated by a colon (:) and each key-value pair is separated by a comma (,).
 
 ############################################################################################
+*/
 
 
 
 
 
-
-# Q. Can you alter the json object to include two addresses such as your home/current address and a permanent address? Additionally, instead of using a single "contact" object in an array, consider creating multiple objects for each type
+//# Q. Can you alter the json object to include two addresses such as your home/current address and a permanent address? Additionally, instead of using a single "contact" object in an array, consider creating multiple objects for each type
 
 
 
@@ -129,13 +129,81 @@
    ]
  }
 
-#################################################################################################
+/*#################################################################################################
 #What I understood From the above task:
 
 Additionally, the contactDetails key now contains an array of objects, each of which represents a different type of contact (e.g. home, work). Each contact object has keys for type and number.
-    
+*/    
 
+// Without using arrey
 
+{
+    "people": {
+
+        "person1":
+        {
+            "firstName": "Abhijeet",
+            "lastName": "Dhawale",
+            "age": 25,
+            "current address": 
+            {
+              "street": "5884+C6J, Guru Gobind Singh Ji Rd",
+              "city": "Nanded",
+              "state": "Maharashtra",
+              "zipCode": "431601"
+            },
+            "permanent address": 
+            {
+              "street": "143 Ambajogai Raod Ahmedpur",
+              "city": "Latur",
+              "state": "Maharashtra",
+              "zipCode": "431645"
+            },        
+            "contactDetails": [
+                {
+                  "type": "home",
+                  "number": "8856074178"
+                },
+                {
+                  "type": "work",
+                  "number": "8856074178"
+                }
+              ]
+        },
+
+        "person2": 
+        {  
+
+        "firstName": "Prathmesh",
+        "lastName": "Dharmadhikari",
+        "age": 22,
+        "current address": 
+        {
+          "street": "5884+C6J, Guru Gobind Singh Ji Rd",
+          "city": "Nanded",
+          "state": "Maharashtra",
+          "zipCode": "431601"
+        },
+        "permanent address": 
+        {
+          "street": "143 Ambajogai Raod Ahmedpur",
+          "city": "Latur",
+          "state": "Maharashtra",
+          "zipCode": "431645"
+        },
+        "contactDetails": [
+            {
+              "type": "home",
+              "number": "8856074178"
+            },
+            {
+              "type": "work",
+              "number": "8856074178"
+            }
+          ]
+      }
+    }
+}
 
 
 
